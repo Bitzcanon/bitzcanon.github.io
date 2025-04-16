@@ -331,23 +331,92 @@ h1,h2,h3,h4,h5
     background: transparent;
     border: none;
     padding: 0.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 1.9rem;
 }
 
 .modal-close i
 {
     color:#ffffff;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .modal-close:hover i
 {
     color: #D43F52;
+}
+
+.modal-responsive {
+    width: 90%;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 576px) {
+    .modal-responsive {
+      max-width: 540px; /* Bootstrap's container-sm */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .modal-responsive {
+      max-width: 720px; /* Bootstrap's container-md */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .modal-responsive {
+      max-width: 960px; /* Bootstrap's container-lg */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .modal-responsive {
+      max-width: 1140px; /* Bootstrap's container-xl */
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .modal-responsive {
+      max-width: 1320px; /* Bootstrap's container-xxl */
+    }
+  }
+
+.carousel-control-next, .carousel-control-prev, .carousel-control-next:hover, .carousel-control-prev:hover
+{
+    opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon
+{
+    display:none;
+}
+
+.carousel-control-next i, .carousel-control-prev i
+{
+    color:#ffffff;
+    font-size: 3rem;
+}
+
+.carousel-control-next:hover i, .carousel-control-prev:hover i
+{
+    color: #D43F52;
+}
+
+.carousel .carousel-indicators .active
+{
+    background-color: #D43F52;
+}
+
+.carousel .carousel-indicators button
+{
+    opacity: 1;
 }
 
 #portfolio-modal .portfolio-modal-content
@@ -358,7 +427,15 @@ h1,h2,h3,h4,h5
 #portfolio-modal .portfolio-modal-header
 {
     background-color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
     border-bottom: 2px solid #ffffff;
+}
+
+#portfolio-modal .portoflio-modal-header-description
+{
+    justify-content: center;
+    color: #ffffff;
 }
 
 #portfolio-modal .portfolio-modal-body
