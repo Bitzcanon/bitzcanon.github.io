@@ -19,9 +19,9 @@
     <!-- animate -->
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/fontawesome/all.min.css" />
     <!-- google font -->
     <link
       href="http://fonts.googleapis.com/css?family=Raleway:400,300,700,800"
@@ -291,18 +291,24 @@
       aria-labelledby="portofolio1ModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="portfolio1Label">Modal title</h1>
+      <div id="portfolio-modal" class="modal-dialog modal-xl">
+        <div class="modal-content portfolio-modal-content">
+          <div
+            class="modal-header justify-content-center portfolio-modal-header"
+          >
+            <h1 class="modal-title text-center w-100 fs-5" id="portfolio1Label">
+              Toxic Tide
+            </h1>
             <button
               type="button"
-              class="btn-close"
+              class="modal-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+            >
+              <i class="fas fa-times"></i>
+            </button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body portfolio-modal-body">...</div>
         </div>
       </div>
     </div>
@@ -311,7 +317,9 @@
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <script src="js/fontawesome/fontawesome.min.js"></script>
     <!-- fullpage -->
     <script src="js/jquery.fullPage.js"></script>
     <!-- smoothScroll -->
