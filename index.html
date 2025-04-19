@@ -155,9 +155,6 @@
                 <div
                   class="progress-bar progress-bar-danger"
                   role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
                   style="width: 95%"
                 ></div>
               </div>
@@ -166,9 +163,6 @@
                 <div
                   class="progress-bar progress-bar-danger"
                   role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
                   style="width: 80%"
                 ></div>
               </div>
@@ -177,9 +171,6 @@
                 <div
                   class="progress-bar progress-bar-danger"
                   role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
                   style="width: 70%"
                 ></div>
               </div>
@@ -188,9 +179,6 @@
                 <div
                   class="progress-bar progress-bar-danger"
                   role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
                   style="width: 90%"
                 ></div>
               </div>
@@ -220,8 +208,7 @@
                   alt="portfolio img"
                 />
                 <div class="portfolio-overlay">
-                  <h4>Web Design</h4>
-                  <h5>Author: Cindy</h5>
+                  <h4>Toxic Tide</h4>
                 </div>
               </div>
             </div>
@@ -284,17 +271,14 @@
     <!-- end portfolio -->
 
     <!-- start Portfolio 1 Modal -->
-    <div
-      class="modal fade"
-      id="toxicTideModal"
-      tabindex="-1"
-      aria-labelledby="portofolio1ModalLabel"
-      aria-hidden="true"
-    >
-      <div id="portfolio-modal" class="modal-dialog modal-responsive">
+    <div class="modal fade" id="toxicTideModal" tabindex="-1">
+      <div
+        id="portfolio-modal"
+        class="modal-dialog modal-dialog-scrollable modal-responsive"
+      >
         <div class="modal-content portfolio-modal-content">
           <div class="modal-header portfolio-modal-header">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
                 <h1
                   class="modal-title text-center w-100 fs-1"
@@ -306,11 +290,14 @@
                   type="button"
                   class="modal-close"
                   data-bs-dismiss="modal"
-                  aria-label="Close"
                 >
                   <i class="fas fa-times-circle"></i>
                 </button>
               </div>
+            </div>
+          </div>
+          <div class="modal-body portfolio-modal-body custom-scrollbar">
+            <div class="container-fluid">
               <div class="row mt-3">
                 <div id="toxicTideIndicators" class="carousel slide">
                   <div class="carousel-indicators">
@@ -319,20 +306,16 @@
                       data-bs-target="#toxicTideIndicators"
                       data-bs-slide-to="0"
                       class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
                     ></button>
                     <button
                       type="button"
                       data-bs-target="#toxicTideIndicators"
                       data-bs-slide-to="1"
-                      aria-label="Slide 2"
                     ></button>
                     <button
                       type="button"
                       data-bs-target="#toxicTideIndicators"
                       data-bs-slide-to="2"
-                      aria-label="Slide 3"
                     ></button>
                   </div>
                   <div class="carousel-inner">
@@ -364,10 +347,7 @@
                     data-bs-target="#toxicTideIndicators"
                     data-bs-slide="prev"
                   >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
+                    <span class="carousel-control-prev-icon"></span>
                     <span class="visually-hidden">Previous</span>
                     <i class="fas fa-arrow-circle-left"></i>
                   </button>
@@ -377,22 +357,91 @@
                     data-bs-target="#toxicTideIndicators"
                     data-bs-slide="next"
                   >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
+                    <span class="carousel-control-next-icon"></span>
                     <span class="visually-hidden">Next</span>
                     <i class="fas fa-arrow-circle-right"></i>
                   </button>
                 </div>
               </div>
               <div class="row mt-3 portoflio-modal-header-description">
-                Short Project Description
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+              </div>
+              <div class="row">
+                <div class="col-4 d-flex portfolio-modal-body-leftcol">
+                  Role
+                </div>
+                <div class="col d-flex portfolio-modal-body-rightcol">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 d-flex portfolio-modal-body-leftcol">
+                  Role
+                </div>
+                <div class="col d-flex portfolio-modal-body-rightcol">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 d-flex portfolio-modal-body-leftcol">
+                  Role
+                </div>
+                <div class="col d-flex portfolio-modal-body-rightcol">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 d-flex portfolio-modal-body-leftcol">
+                  Role
+                </div>
+                <div class="col d-flex portfolio-modal-body-rightcol">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 d-flex portfolio-modal-body-leftcol">
+                  Role
+                </div>
+                <div class="col d-flex portfolio-modal-body-rightcol">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4 d-flex portfolio-modal-body-leftcol">
+                  Role
+                </div>
+                <div class="col d-flex portfolio-modal-body-rightcol">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has
+                </div>
               </div>
             </div>
-          </div>
-          <div class="modal-body portfolio-modal-body">
-            <!-- BODY -->
           </div>
         </div>
       </div>
