@@ -432,17 +432,37 @@ h1,h2,h3,h4,h5
     border-bottom: 5px solid #334155;
 }
 
-#portfolio-modal .portoflio-modal-header-description
+.portfolio-modal-header-carousel
+{
+    border: 5px solid #334155;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.portoflio-modal-header-description
 {
     justify-content: center;
     padding: 16px;
     color: #afc1da;
+    border-bottom: 5px solid #334155;
+    border-left: 5px solid #334155;
+    border-right: 5px solid #334155;
 }
 
 #portfolio-modal .portfolio-modal-body
 {
     background-color: #1E293B;
     color: #F1F5F9
+}
+
+.portfolio-modal-body-extrainfo
+{
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border-left: 5px solid #334155;
+    border-right: 5px solid #334155;
+    padding: 8px;
 }
 
 .portfolio-modal-body-leftcol
@@ -463,6 +483,41 @@ h1,h2,h3,h4,h5
     vertical-align: middle;
     padding: 8px;
     align-items: center;
+    justify-content: center;
+}
+
+/* Custom tooltips */
+.tooltip-inner
+{
+    background-color: #1E293B;
+    color: #F1F5F9;
+    border: 1px solid #334155;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+/* Top arrow */
+.tooltip.bs-tooltip-top .tooltip-arrow::before 
+{
+    border-top-color: #1E293B !important;
+}
+  
+/* Bottom arrow */
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before 
+{
+    border-bottom-color: #1E293B !important;
+}
+  
+/* Left arrow */
+.tooltip.bs-tooltip-start .tooltip-arrow::before 
+{
+    border-left-color: #1E293B !important;
+}
+  
+/* Right arrow */
+.tooltip.bs-tooltip-end .tooltip-arrow::before 
+{
+    border-right-color: #1E293B !important;
 }
 
 /* Custom scroll bar for modals */
