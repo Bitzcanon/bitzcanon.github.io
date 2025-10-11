@@ -174,8 +174,8 @@ h1,h2,h3,h4,h5
         background: url('../images/home-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 120px;
-        padding-bottom: 140px;
+        padding-top: 80px;
+        padding-bottom: 80px;
         text-align: center;
 	}
 #home h1
@@ -223,26 +223,40 @@ h1,h2,h3,h4,h5
 #work .media
     {
       margin-top: 30px;
+      text-align: center;
+      padding-left: 16px;
+      padding-right: 16px;
     }
-	
+
+#work .media-object
+    {
+        padding: 16px;
+    }
 #work .media .fa
     {
-        border: 2px solid #334155;
+        border: 2px solid #3B82F6;
         border-radius: 50%;
         color: #3B82F6;
         font-size: 24px;
-        margin-right: 24px;
-        width: 60px;
-        height: 60px;
-        line-height: 55px;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
         text-align: center;
         vertical-align: middle;
         transition: all 0.4s ease-in;
     }
-#work .media .fa:hover
+#work .icon
     {
-        background: #60A5FA;
-        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 50%;
+        filter: invert(39%) sepia(76%) saturate(1531%) hue-rotate(202deg) brightness(100%) contrast(94%);
+        font-size: 24px;
+        width: 70px;
+        height: 70px;
+        padding: 18px;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.4s ease-in;
     }
 #work .media .media-heading
     {
@@ -283,6 +297,20 @@ h1,h2,h3,h4,h5
     {
         font-weight: bold;
         float: right;
+    }
+#about .row
+    {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    }
+#about img
+    {
+        width: 100%;
+        height: auto;
+        max-height: 460px;
+        object-fit: contain;
+        border-radius: 8px;
     }
 /* end about */
 
@@ -566,6 +594,8 @@ h1,h2,h3,h4,h5
 ::-webkit-scrollbar-thumb:hover {
   background: #94A3B8;
 }
+
+
 
 
 /* end portfolio modal */
