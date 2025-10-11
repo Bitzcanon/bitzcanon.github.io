@@ -12,6 +12,15 @@ $(document).ready(function() {
 			});
 		});
 
+$(document).on('hidden.bs.modal', function () {
+  $('body').removeClass('modal-open');
+  $('body').css({
+    overflow: 'visible',
+    paddingRight: '0px'
+  });
+  $('html').css('overflow', 'visible');
+});
+
 // wow
 $(function()
 {

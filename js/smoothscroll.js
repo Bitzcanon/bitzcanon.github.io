@@ -191,7 +191,7 @@ if (!window["jQuery"])
     });
   return (
     (n.defaults = {
-      duration: 1e3,
+      duration: 0,
       axis: "y",
       event: "click",
       stop: !0,
