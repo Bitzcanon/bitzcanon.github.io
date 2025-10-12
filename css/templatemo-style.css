@@ -7,7 +7,7 @@ https://templatemo.com/tm-458-lavish
 */
 body
 {
-	background: #0F172A;
+	background: rgb(15, 23, 42);
 	color: #F1F5F9;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -170,10 +170,10 @@ h1,h2,h3,h4,h5
 /* start home */       
 #home
 	{
-        background: url('../images/home-bg.jpg');
+        /* background: url('../images/home-bg.jpg');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
         padding-top: 80px;
         padding-bottom: 80px;
         text-align: center;
@@ -182,7 +182,25 @@ h1,h2,h3,h4,h5
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 	}
+#home video
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1.5s ease;
+    }
+#home video.active
+    {
+        opacity: 1;
+    }
 #home h1
     {
         border: 2px solid #22D3EE;
@@ -191,14 +209,18 @@ h1,h2,h3,h4,h5
         letter-spacing: 6px;
         padding: 25px 35px;
         margin: 30px 0;
+        position: relative;
+        z-index: 2;
     }
 #home h2
     {
         padding-bottom: 10px;
+        position: relative;
+        z-index: 2;
     }
 #home .btn
     {
-        background-color: #3B82F6;
+        background-color: rgb(59, 130, 246);
         color: #F1F5F9;
         font-size: 16px;
         font-weight: bold;
@@ -207,11 +229,23 @@ h1,h2,h3,h4,h5
         margin-top: 40px;
         padding-top: 18px;
         transition: all 0.4s ease-in-out;
+        position: relative;
+        z-index: 2;
     }
 #home .btn:hover
     {
-        background: #60A5FA;
+        background: rgb(96, 165, 250);
         border-color: transparent;
+        position: relative;
+        z-index: 2;
+    }
+#home .home-backing
+    {
+        background-color: rgb(15, 23, 42, 0.8);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-radius: 10px;
+        z-index: 1;
     }
 /* end home */
 
@@ -314,8 +348,9 @@ h1,h2,h3,h4,h5
         width: 100%;
         height: auto;
         max-height: 460px;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: 8px;
+        vertical-align: center;
     }
 /* end about */
 
@@ -332,36 +367,45 @@ h1,h2,h3,h4,h5
 #portfolio img
     {
         object-fit: cover;
-        border-radius: 10px;
         display: block;
+        margin-bottom: 16px;
     }
 #portfolio .portfolio-thumb
     {
         overflow: hidden;
         position: relative;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
+        border-radius: 10px;
+        border: 5px solid #334155;
     }
-#portfolio .portfolio-thumb .portfolio-overlay
-    {
-        background: #3B82F6;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        padding-top: 60px;
-        transition: all 0.4s ease-in-out;
-    }
-#portfolio .portfolio-thumb:hover .portfolio-overlay
+#portfolio .portfolio-thumb:hover
     {
         cursor: pointer;
-        opacity: 0.8;
-        transform: scale(0.9);
+        transform: translateY(-10px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+        background-image: linear-gradient(0deg, #282c3a, #1E293B);
     }
 /* end portfolio */
+
+/* start contact */
+#contact .icon
+    {
+        filter: invert(39%) sepia(76%) saturate(1531%) hue-rotate(202deg) brightness(100%) contrast(94%);
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.4s ease-in;
+        margin-left: -8px;
+        margin-right: 16px;
+    }
+
+#contact .icon:hover
+    {
+        filter: invert(53%) sepia(99%) saturate(100%) hue-rotate(187deg) brightness(98%) contrast(100%);
+        cursor: pointer;
+    }
+/* end contact */
 
 /* start portfolio modal */
 .modal-close
@@ -460,7 +504,7 @@ h1,h2,h3,h4,h5
 #portfolio-modal .portfolio-modal-content
 {
     border: 5px solid #334155;
-    background-color: #0F172A;
+    background-color: rgb(15, 23, 42);
 }
 
 #portfolio-modal .portfolio-modal-header

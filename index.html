@@ -37,10 +37,19 @@
     <div id="fullpage">
       <!-- start home -->
       <div id="home" class="section">
+        <video autoplay muted loop playsinline class="active">
+          <source src="images/ToxicTide_hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video autoplay muted loop playsinline>
+          <source src="images/SlimeAdventures_hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div class="container">
           <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 wow fadeIn home-backing" data-wow-delay="0.9s">
               <h3>PORTFOLIO SHOWCASE</h3>
               <h1>Winston Ngoui</h1>
               <h2 class="rotate">UI/UX DESIGNER, GAME DEVELOPER</h2>
@@ -51,7 +60,7 @@
                 >Get Started</a
               >
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
@@ -156,7 +165,11 @@
       <div id="about" class="section">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-6 wow fadeInLeft" data-wow-delay="0.9s">
+            <div
+              class="col-12 col-sm-6 wow fadeInLeft"
+              style="padding-left: 32px; padding-right: 32px"
+              data-wow-delay="0.9s"
+            >
               <h2>ABOUT ME</h2>
               <h4>UI/UX DESIGNER &AMP; GAME DEVELOPER</h4>
               <p>
@@ -180,7 +193,11 @@
                 cohesive experience is something truly fascinating to me.
               </p>
             </div>
-            <div class="col-12 col-sm-6 wow fadeInRight" data-wow-delay="0.9s">
+            <div
+              class="col-12 col-sm-6 d-flex align-items-center justify-content-center wow fadeInRight"
+              style="padding-left: 32px; padding-right: 32px"
+              data-wow-delay="0.9s"
+            >
               <img src="images/MePhoto.jpg" alt="Photo of Me!" />
             </div>
           </div>
@@ -191,7 +208,10 @@
       <!-- start portfolio -->
       <div id="portfolio" class="section">
         <div class="container">
-          <div class="row justify-content-center">
+          <div
+            class="row justify-content-center"
+            style="padding-left: 20px; padding-right: 20px"
+          >
             <div class="col-md-12">
               <h2 class="wow bounce">GAME PROJECTS I'VE BEEN A PART OF</h2>
             </div>
@@ -206,10 +226,8 @@
                   class="img-fluid"
                   alt="portfolio img"
                 />
-                <div class="portfolio-overlay">
-                  <h3>Toxic Tide</h3>
-                  <h5>By Peppermint Party</h5>
-                </div>
+                <h4>Toxic Tide</h4>
+                <p>2D Side-Scrolling Endless Runner</p>
               </div>
             </div>
             <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.6s">
@@ -223,10 +241,8 @@
                   class="img-fluid"
                   alt="portfolio img"
                 />
-                <div class="portfolio-overlay">
-                  <h4>Slime Adventures</h4>
-                  <h5>By CriticalBlitz</h5>
-                </div>
+                <h4>Slime Adventures</h4>
+                <p>2D Top-down Shoot 'Em Up</p>
               </div>
             </div>
             <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.6s">
@@ -240,10 +256,8 @@
                   class="img-fluid"
                   alt="portfolio img"
                 />
-                <div class="portfolio-overlay">
-                  <h4>VR Wedding Proposal</h4>
-                  <h5>By Me</h5>
-                </div>
+                <h4>VR Wedding Proposal</h4>
+                <p>VR Simulation Game</p>
               </div>
             </div>
           </div>
@@ -262,10 +276,8 @@
                   class="img-fluid"
                   alt="portfolio img"
                 />
-                <div class="portfolio-overlay">
-                  <h3>Brand Design</h3>
-                  <h5>By Me</h5>
-                </div>
+                <h4>Original Brand Design</h4>
+                <p>UI/UX Design Project</p>
               </div>
             </div>
           </div>
@@ -273,6 +285,43 @@
       </div>
     </div>
     <!-- end portfolio -->
+
+    <!-- start contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-sm-6 wow fadeInLeft"
+            style="padding-left: 32px; padding-right: 32px"
+            data-wow-delay="0.5s"
+          >
+            <h2>Contact Me!</h2>
+            <div style="margin-bottom: 16px;">
+            <h5>Feel free to reach out to me via these links!</h4>
+              </div>
+              <a
+                    href="https://www.linkedin.com/in/winston-ngoui"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                    src="icons/Linkedin_Logo.svg"
+                    class="icon"
+                    alt="Linkedin Logo"
+                  /></a>
+              <a
+                    href="mailto:winston.ngoui@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                src="icons/Email_Logo.svg"
+                class="icon"
+                alt="Linkedin Logo"
+              /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
 
     <!-- start Portfolio 1 Modal -->
     <div class="modal fade" id="toxicTideModal" tabindex="-1">
@@ -374,11 +423,11 @@
               </div>
               <div class="row portoflio-modal-header-description">
                 <p>
-                  Toxic Tide is a 2D endless runner that has the player escaping
-                  a deadly wall of toxic gas. The player has to make use of
-                  their grappling hook to traverse through the obstacle-ridden
-                  laboratory, collect gears to upgrade their gear and survive
-                  for as long as they can.
+                  Toxic Tide is a 2D side-scrolling endless runner that has the
+                  player escaping a deadly wall of toxic gas. The player has to
+                  make use of their grappling hook to traverse through the
+                  obstacle-ridden laboratory, collect gears to upgrade their
+                  gear and survive for as long as they can.
                 </p>
                 <p>
                   This game is the result of a 3-month long school project where
@@ -966,5 +1015,26 @@
     <script src="js/jquery.simple-text-rotator.js"></script>
     <!-- custom -->
     <script src="js/custom.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const videos = document.querySelectorAll("#home video");
+        let current = 0;
+
+        function playNextVideo() {
+          // Fade out current video
+          videos[current].classList.remove("active");
+
+          // Increment index
+          current = (current + 1) % videos.length;
+
+          // Fade in next video
+          videos[current].classList.add("active");
+        }
+
+        // Set interval between transitions
+        setInterval(playNextVideo, 10000); // 10 seconds
+      });
+    </script>
   </body>
 </html>
