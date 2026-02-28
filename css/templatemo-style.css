@@ -580,6 +580,15 @@ h1,h2,h3,h4,h5
     text-align: left;
 }
 
+.portfolio-modal-body-content h1,
+.portfolio-modal-body-content h2,
+.portfolio-modal-body-content h3,
+.portfolio-modal-body-content h4,
+.portfolio-modal-body-content h5
+{
+    text-align: center;
+}
+
 .portfolio-modal-body-leftcol
 {
     font-size: 24px;
@@ -680,4 +689,22 @@ h1,h2,h3,h4,h5
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94A3B8;
+}
+
+.modal-figure { 
+    width: 50%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+.modal-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
