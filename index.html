@@ -38,7 +38,17 @@
       <!-- start home -->
       <div id="home" class="section">
         <video autoplay muted loop playsinline class="active">
+          <source src="images/SootScoot_hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video autoplay muted loop playsinline>
           <source src="images/ToxicTide_hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video autoplay muted loop playsinline>
+          <source src="images/Groovity_hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -47,10 +57,6 @@
           Your browser does not support the video tag.
         </video>
 
-        <video autoplay muted loop playsinline>
-          <source src="images/SlimeAdventures_hero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
         <div class="container">
           <div class="row">
             <div class="col-md-3"></div>
@@ -117,7 +123,7 @@
                 <div class="media-body">
                   <h3 class="media-heading">Unity Game Engine</h3>
                   <p>
-                    6+ years of experience using the Unity Engine for numerous
+                    7+ years of experience using the Unity Engine for numerous
                     projects.
                   </p>
                 </div>
@@ -205,6 +211,21 @@
               <div
                 class="portfolio-thumb"
                 data-bs-toggle="modal"
+                data-bs-target="#sootscootModal"
+              >
+                <img
+                  src="images/SootScoot_title.png"
+                  class="img-fluid"
+                  alt="portfolio img"
+                />
+                <h4>Soot & Scoot</h4>
+                <p>2D Stealth</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.6s">
+              <div
+                class="portfolio-thumb"
+                data-bs-toggle="modal"
                 data-bs-target="#toxicTideModal"
               >
                 <img
@@ -220,6 +241,21 @@
               <div
                 class="portfolio-thumb"
                 data-bs-toggle="modal"
+                data-bs-target="#groovityModal"
+              >
+                <img
+                  src="images/Groovity_title.png"
+                  class="img-fluid"
+                  alt="portfolio img"
+                />
+                <h4>Groovity</h4>
+                <p>3D Puzzle Platformer</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.6s">
+              <div
+                class="portfolio-thumb"
+                data-bs-toggle="modal"
                 data-bs-target="#undividedModal"
               >
                 <img
@@ -229,21 +265,6 @@
                 />
                 <h4>Undivided</h4>
                 <p>2D Roguelike</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.6s">
-              <div
-                class="portfolio-thumb"
-                data-bs-toggle="modal"
-                data-bs-target="#slimeAdventuresModal"
-              >
-                <img
-                  src="images/Slime_Adventures_title.png"
-                  class="img-fluid"
-                  alt="portfolio img"
-                />
-                <h4>Slime Adventures</h4>
-                <p>2D Shoot 'Em Up</p>
               </div>
             </div>
             <div class="col-12 col-md-6 wow fadeIn" data-wow-delay="0.6s">
@@ -309,6 +330,308 @@
       </div>
     </div>
     <!-- end contact -->
+
+    <!-- start Portfolio 1 Modal -->
+    <div class="modal fade" id="sootscootModal" tabindex="-1">
+      <div
+        id="portfolio-modal"
+        class="modal-dialog modal-dialog-scrollable modal-responsive"
+      >
+        <div class="modal-content portfolio-modal-content">
+          <div class="modal-header portfolio-modal-header">
+            <div class="container-fluid">
+              <div class="row">
+                <h1
+                  class="modal-title text-center w-100 fs-1"
+                  id="portfolio1Label"
+                >
+                  Soot & Scoot
+                </h1>
+                <button
+                  type="button"
+                  class="modal-close"
+                  data-bs-dismiss="modal"
+                >
+                  <i class="fas fa-times-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Body Start -->
+          <div class="modal-body portfolio-modal-body custom-scrollbar">
+            <div class="container-fluid">
+              <div class="row portfolio-modal-header-carousel">
+                <div
+                  id="sootscootIndicators"
+                  style="padding-left: 0px; padding-right: 0px"
+                  class="carousel slide"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#sootscootIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#sootscootIndicators"
+                      data-bs-slide-to="1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#sootscootIndicators"
+                      data-bs-slide-to="2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#sootscootIndicators"
+                      data-bs-slide-to="3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#sootscootIndicators"
+                      data-bs-slide-to="4"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="images/SootScoot_1.png"
+                        class="d-block w-100"
+                        alt="Soot & Scoot 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/SootScoot_2.png"
+                        class="d-block w-100"
+                        alt="Soot & Scoot 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/SootScoot_3.png"
+                        class="d-block w-100"
+                        alt="Soot & Scoot 3"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/SootScoot_4.png"
+                        class="d-block w-100"
+                        alt="Soot & Scoot 4"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/SootScoot_5.png"
+                        class="d-block w-100"
+                        alt="Soot & Scoot 5"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#sootscootIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                    <i class="fas fa-arrow-circle-left"></i>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#sootscootIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row portoflio-modal-header-description">
+                <p>
+                  Soot & Scoot is a top-down stealth game where survival becomes
+                  more difficult as your follower group expands. You take on the
+                  role of Soot, a tiny dust sprite navigating a pristine yet
+                  perilous household, hunted by relentless cleaning machines. To
+                  escape each level, you must rescue scattered Friends and guide
+                  them safely to the exit whilst avoiding the hungry gazes of
+                  Roombas looking to sweep you and your Friends up.
+                </p>
+                <p>
+                  This game is the result of a 6-month long school project where
+                  the goal was to create a fully polished gameplay experience.
+                </p>
+              </div>
+              <div
+                style="border-bottom: 5px solid #334155; border-radius: 4px"
+                class="row"
+              >
+                <div class="col d-flex portfolio-modal-body-extrainfo">
+                  <a
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Project Team"
+                  >
+                    <i style="padding-right: 8px" class="fas fa-users"></i>
+                  </a>
+                  6 Programmers | 1 Designer | 1 Artist
+                </div>
+                <div
+                  style="border-left: 0px"
+                  class="col d-flex portfolio-modal-body-extrainfo"
+                >
+                  <a
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Project Duration"
+                  >
+                    <i style="padding-right: 8px" class="fas fa-clock"></i>
+                  </a>
+                  Sep 2025 - Mar 2026 (6 Months)
+                </div>
+              </div>
+              <div class="row">
+                <div class="portfolio-modal-body-content">
+                  <h4>Roles and Responsibilities</h4>
+                  <p>
+                    I lead this project as the Product Manager and Design Lead.
+                    The game idea was also initially proposed by me.
+                  </p>
+                  <p>
+                    As the Product Manager, I was responsbile for delegating
+                    tasks to each team member, keeping track of deadlines, and
+                    ensuring all development materials were appropriately
+                    handled for submission.
+                  </p>
+                  <p>
+                    And as the Design Lead, I was solely responsbile for
+                    creating the Unity prototype and presenting it to the team
+                    and professors. I was also responsible for fleshing out the
+                    game's design, designing each level, documenting the Game
+                    Design Document, and leading the programmers in their custom
+                    game engine implementations based off the Unity prototype.
+                  </p>
+                  <h4>Challenges Faced</h4>
+                  <h5>Shaping Stealth Through Visibility</h5>
+                  <p>
+                    A key challenge in Soot & Scoot was balancing how much
+                    information the player should have at any moment. Stealth
+                    gameplay relies on the loop Observe → Plan → Execute, which
+                    depends heavily on player visibility.
+                  </p>
+                  <p>
+                    Playtesting revealed a major issue: players were frequently
+                    caught off-guard by roaming Roombas, leading to frustration
+                    and “unfair” deaths. This shifted the experience away from
+                    intentional stealth and toward reactive gameplay.
+                  </p>
+                  <p>
+                    Shown below is the original camera size used for a large
+                    chunk of development.
+                  </p>
+
+                  <figure class="modal-figure">
+                    <img src="images/SootScootInfo1.png" alt="Rope Wrapping" />
+                    <figcaption>
+                      Zoomed in with limited gameplay information.
+                    </figcaption>
+                  </figure>
+
+                  <p>
+                    The root cause was a camera that was too zoomed in, limiting
+                    how much of the level players could see and preventing
+                    informed decision-making.
+                  </p>
+                  <p>
+                    To address this, I redesigned both the camera system and
+                    level layout in tandem. Levels were divided into sections
+                    sized around the camera view, ensuring players could fully
+                    observe a space before acting. This restored the intended
+                    stealth loop and improved clarity.
+                  </p>
+                  <p>
+                    The comparison below shows the original camera versus the
+                    final implementation.
+                  </p>
+                  <div class="figure-row">
+                    <figure class="modal-figure">
+                      <img
+                        src="images/SootScootInfo1.png"
+                        alt="Rope Wrapping"
+                      />
+                      <figcaption>Original zoomed in camera.</figcaption>
+                    </figure>
+
+                    <figure class="modal-figure">
+                      <img
+                        src="images/SootScootInfo2.png"
+                        alt="Rope Wrapping"
+                      />
+                      <figcaption>
+                        Final camera implementation fitting a whole section of
+                        the level.
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <p>
+                    This issue wasn't solved by tweaking isolated systems, but
+                    by reassessing the overall gameplay loop. Viewing the
+                    experience holistically made it clear that visibility was
+                    the bottleneck, leading to a solution that better supported
+                    intentional stealth gameplay.
+                  </p>
+
+                  <h5>Custom Game Engine</h5>
+                  <p>
+                    Another challenge faced was that this project required the
+                    development of a custom game engine tailored to the game
+                    concept. As a game designer, this meant adapting core
+                    mechanics and systems to align with engine capabilities,
+                    rather than relying on established tools like Unity.
+                  </p>
+                  <p>
+                    To manage scope and technical constraints, I implemented a
+                    feature prioritization framework, categorizing systems by
+                    design impact and development complexity. Core features such
+                    as line-of-sight systems and enemy AI were identified as
+                    high priority, while lower-impact elements (e.g. particle
+                    effects) were deprioritized. This enabled effective
+                    cross-functional collaboration with the tech team and
+                    ensured development focus on critical gameplay systems.
+                  </p>
+                  <p>
+                    Whilst not ideal, working within a custom engine environment
+                    strengthened my skills in systems design, technical design
+                    adaptation, and scope management. It also improved my
+                    ability to evaluate feature trade-offs, leading to more
+                    informed decisions during the game balancing and polish
+                    phases.
+                  </p>
+                  <h4>Links</h4>
+                  <div style="text-align: center">
+                    <a href="" target="_blank" rel="noopener noreferrer"
+                      >Game Website and Download (DigiPen) (COMING SOON)</a
+                    >
+                  </div>
+                  <div style="text-align: center">
+                    <a href="" target="_blank" rel="noopener noreferrer"
+                      >Steam Page (COMING SOON)</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Portfolio 1 Modal -->
 
     <!-- start Portfolio 1 Modal -->
     <div class="modal fade" id="toxicTideModal" tabindex="-1">
@@ -863,7 +1186,7 @@
     <!-- end Portfolio 2 Modal -->
 
     <!-- start Portfolio 2 Modal -->
-    <div class="modal fade" id="slimeAdventuresModal" tabindex="-1">
+    <div class="modal fade" id="groovityModal" tabindex="-1">
       <div
         id="portfolio-modal"
         class="modal-dialog modal-dialog-scrollable modal-responsive"
@@ -876,7 +1199,7 @@
                   class="modal-title text-center w-100 fs-1"
                   id="portfolio2Label"
                 >
-                  Slime Adventures
+                  Groovity
                 </h1>
                 <button
                   type="button"
@@ -893,55 +1216,79 @@
             <div class="container-fluid">
               <div class="row portfolio-modal-header-carousel">
                 <div
-                  id="slimeAdventuresIndicators"
+                  id="groovityIndicators"
                   style="padding-left: 0px; padding-right: 0px"
                   class="carousel slide"
                 >
                   <div class="carousel-indicators">
                     <button
                       type="button"
-                      data-bs-target="#slimeAdventuresIndicators"
+                      data-bs-target="#groovityIndicators"
                       data-bs-slide-to="0"
                       class="active"
                     ></button>
                     <button
                       type="button"
-                      data-bs-target="#slimeAdventuresIndicators"
+                      data-bs-target="#groovityIndicators"
                       data-bs-slide-to="1"
                     ></button>
                     <button
                       type="button"
-                      data-bs-target="#slimeAdventuresIndicators"
+                      data-bs-target="#groovityIndicators"
                       data-bs-slide-to="2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#groovityIndicators"
+                      data-bs-slide-to="3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#groovityIndicators"
+                      data-bs-slide-to="4"
                     ></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img
-                        src="images/SlimeAdventures_1.png"
+                        src="images/Groovity_1.png"
                         class="d-block w-100"
-                        alt="Slime Adventures 1"
+                        alt="Groovity 1"
                       />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="images/SlimeAdventures_2.png"
+                        src="images/Groovity_2.png"
                         class="d-block w-100"
-                        alt="Slime Adventures 2"
+                        alt="Groovity 2"
                       />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="images/SlimeAdventures_3.png"
+                        src="images/Groovity_3.png"
                         class="d-block w-100"
-                        alt="Slime Adventures 3"
+                        alt="Groovity 3"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/Groovity_4.png"
+                        class="d-block w-100"
+                        alt="Groovity 4"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/Groovity_5.png"
+                        class="d-block w-100"
+                        alt="Groovity 5"
                       />
                     </div>
                   </div>
                   <button
                     class="carousel-control-prev"
                     type="button"
-                    data-bs-target="#slimeAdventuresIndicators"
+                    data-bs-target="#groovityIndicators"
                     data-bs-slide="prev"
                   >
                     <span class="carousel-control-prev-icon"></span>
@@ -951,7 +1298,7 @@
                   <button
                     class="carousel-control-next"
                     type="button"
-                    data-bs-target="#slimeAdventuresIndicators"
+                    data-bs-target="#groovityIndicators"
                     data-bs-slide="next"
                   >
                     <span class="carousel-control-next-icon"></span>
@@ -962,17 +1309,15 @@
               </div>
               <div class="row portoflio-modal-header-description">
                 <p>
-                  Slime Adventures is take on the Shoot 'em up genre where you
-                  play as a slime and have to survive against waves of enemies
-                  while making use of the slime pets available to you. Defeat as
-                  many enemies as you can, collect coins, purchase items in the
-                  shop and finally beat the boss.
+                  Groovity is a 3D physics-based puzzle platformer inspired by
+                  Portal. Wield the Polarity Oscillation Gizmo (P.O.G) to
+                  polarize objects and solve puzzles with the power of
+                  attraction and repulsion!
                 </p>
                 <p>
-                  This game is the result of a month long school project where
-                  the goal was to create a data-driven 2D top-down survival
-                  shooter. The focus was to develop multiple systems that will
-                  read/write from data stored in an external file.
+                  This game was made during the weeklong Century Games Game Jam
+                  2026 and won 4th place out of 25 games! The theme for the jam
+                  was "Puzzle".
                 </p>
               </div>
               <div
@@ -987,7 +1332,7 @@
                   >
                     <i style="padding-right: 8px" class="fas fa-users"></i>
                   </a>
-                  4 Designers
+                  4 Developers | 1 Artist
                 </div>
                 <div
                   style="border-left: 0px"
@@ -1000,34 +1345,141 @@
                   >
                     <i style="padding-right: 8px" class="fas fa-clock"></i>
                   </a>
-                  Jun 2025 - Jul 2025 (1 Month)
+                  Apr 2026 (1 Week)
                 </div>
               </div>
               <div class="row">
                 <div class="portfolio-modal-body-content">
-                  <h4>Roles and Responsibilities</h4>
+                  <h4>Theme & Early Ideation</h4>
+                  <p>The theme for this jam was "Puzzle".</p>
                   <p>
-                    I took on the Technical Designer role for this project,
-                    where I was responsible for data serialization and related
-                    systems. Additionally, I implemented the game's menus and UI
-                    to act as the front-end for our dynamic data systems. I was
-                    also in-charge of the audio implementation.
+                    Before the jam started, the team agreed to create a 3D game
+                    in an effort to learn and familiarize ourselves with the 3D
+                    development pipeline. With this, our plan was to adapt the
+                    theme to a 3D game regardless of what it was.
                   </p>
                   <p>
-                    Whilst not officially given the Product Manager role, my
-                    team relied on me to ensure that our planned features did
-                    not exceed the project's scope and were feasible given the
-                    tight deadline and team capabilities. I also helped guide
-                    any teammates who got stuck or lost throughout the
-                    development process.
+                    Learning from the previous jam, I proposed dedicating a full
+                    day to ideation and planning due to the longer one-week
+                    timeframe. Some initial ideas included:
                   </p>
-                  <h4>Learning Takeaways</h4>
                   <p>
-                    This project taught me a lot about clean data management and
-                    modular design. Using external files instead of embedded
-                    data can help streamline collaboration with a dedicated
-                    technical team in the future, especially on bigger projects.
+                    - A Rube Goldberg Machine Simulator where players had to
+                    "complete the circuit" by finding placing down objects from
+                    around the room and guiding an object of interest to the
+                    finish line.
                   </p>
+                  <p>
+                    - A game where you play as a traffic police officer in
+                    Singapore, and have to conduct the traffic so that it flows
+                    smoothly. Different situations and scenarios are presented
+                    to force the player to adapt to each situation on the go.
+                  </p>
+                  <p>
+                    - A puzzle platformer where the player can appoint objects
+                    as one of the magnetic poles, and making use of this to
+                    navigate through levels.
+                  </p>
+                  <p>
+                    At the end of the day, we landed on the magnet-based puzzle
+                    platformer idea. We felt that this idea presented the best
+                    opportunity to explore the 3D space of game development and
+                    allow us to experiment a fully physics-based mechanic in the
+                    magnetism mechanic.
+                  </p>
+                  <h4>Scope & Technical Direction</h4>
+                  <p>
+                    We immediately recognized the parallels of this idea with a
+                    popular game called Portal, which is also a 3D puzzle
+                    platformer where the player has to "think with portals". To
+                    guide us, we took inspiration of how portal presented the
+                    player with challenges with their unique portal mechanics,
+                    which helped us think up of different interactions with our
+                    magnetism mechanic, such as allowing the player to magnetise
+                    themselves to solve puzzles.
+                  </p>
+                  <p>
+                    For the game's theme, we went through different ideas that
+                    could work with the idea of magnets, and decided to try a
+                    fun and colourful theme called Space Groove, with
+                    inspiration from a skinline in League of Legends. This was
+                    where the idea slowly shifted from magnets to gravity, as it
+                    made more sense in a space-centred context.
+                  </p>
+                  <figure class="modal-figure">
+                    <img
+                      src="images/SpaceGroove.jpg"
+                      alt="Space Groove from League of Legends"
+                    />
+                    <figcaption>Space Groove from League of Legends</figcaption>
+                  </figure>
+                  <p>
+                    In an effort to stay within the given timeframe, we planned
+                    the minimum playable target to include 1 tutorial level and
+                    3 puzzle levels. Whilst development of the game mechanics
+                    were relatively smooth sailing, troubles began when it came
+                    to the level design.
+                  </p>
+                  <p>
+                    The team was not too familiar with puzzle games in general,
+                    and our unfamiliarity of 3D game development caused us to
+                    struggle when coming up with compelling puzzles with the
+                    sandbox we've created. We were also unsure if we should have
+                    made the levels with the intention of a proper game
+                    progression, or create the most difficult levels we could
+                    think of to showcase what our game was fully capable of (in
+                    the context of a game jam). Ultimately, we went with the
+                    latter, which we will later learn was a mistake.
+                  </p>
+                  <h4>Key Learning Points</h4>
+                  <p>
+                    During judging, the common consensus amongst the panel and
+                    playtesters was that the game was too difficult to
+                    understand, which prevented players from fully appreciating
+                    the puzzle aspects of the game. Most players were completely
+                    stuck in the first level!
+                  </p>
+                  <p>
+                    Due to the game's extensive control scheme and players
+                    getting thrown straight into the deep-end of the most
+                    difficult levels, players did not have the time to grasp
+                    gameplay mechanics and were simply too overloaded with
+                    information to solve the puzzles presented. In hindsight,
+                    our decision with how we laid out the game progression
+                    worked against us. After all, how could players begin to
+                    enjoy a puzzle without first understanding the rules?
+                  </p>
+                  <p>
+                    Looking back, what we could have done to improve this was to
+                    slowly introduce mechanics one by one in separate manageable
+                    levels instead of throwing everything at players straight
+                    away in a giant tutorial followed by incredibly challenging
+                    levels. Another possible improvement was to include our
+                    control scheme as an on-screen UI, to help remind players of
+                    their possible actions.
+                  </p>
+                  <p>
+                    This experience highlighted the importance of clear
+                    onboarding and thoughtful difficulty progression, especially
+                    in puzzle design.
+                  </p>
+                  <h4>Links</h4>
+                  <div style="text-align: center">
+                    <a
+                      href="https://www.youtube.com/watch?v=5oaszyErJYU"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Watch a full playthrough of Groovity here! (Youtube)</a
+                    >
+                  </div>
+                  <div style="text-align: center">
+                    <a
+                      href="https://blitzcanon.itch.io/groovity"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Download and play Groovity here! (Itch.io)</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>

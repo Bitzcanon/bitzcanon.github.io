@@ -708,3 +708,12 @@ h1,h2,h3,h4,h5
   font-size: 0.9rem;
   opacity: 0.7;
 }
+
+.figure-row {
+    display: flex;
+    gap: 20px;
+}
+
+.figure-row .modal-figure {
+  flex: 1;
+}
